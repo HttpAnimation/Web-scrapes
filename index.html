@@ -21,3 +21,31 @@
   <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Page Scraper</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Web Page Scraper</h1>
+  
+  <div id="darkModeToggle">
+    <input type="checkbox" id="darkModeCheckbox" onchange="toggleDarkMode()">
+    <label for="darkModeCheckbox">Dark Mode</label>
+  </div>
+  
+  <form id="urlForm">
+    <label for="urlInput">Enter URL:</label>
+    <input type="text" id="urlInput" name="urlInput">
+    <button type="button" onclick="scrapeText()">Scrape</button>
+  </form>
+  
+  <div id="downloadButtons">
+    <button type="button" onclick="downloadHTML()">Download as HTML</button>
+    <button type="button" onclick="downloadText()">Download as Text</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
