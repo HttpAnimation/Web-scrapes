@@ -1,10 +1,13 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
+  transition: background-color 0.3s ease;
 }
 
 h1 {
   text-align: center;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
 form {
@@ -31,4 +34,42 @@ button:hover {
 #downloadButtons {
   text-align: center;
   margin-top: 20px;
+}
+
+#darkModeToggle {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#darkModeCheckbox {
+  display: none;
+}
+
+#darkModeCheckbox + label {
+  cursor: pointer;
+  color: #333;
+}
+
+#darkModeCheckbox:checked + label {
+  color: #fff;
+}
+
+.dark-mode {
+  background-color: #333;
+}
+
+.dark-mode h1 {
+  color: #fff;
+}
+
+.dark-mode label {
+  color: #fff;
+}
+
+.dark-mode button {
+  background-color: #555;
+}
+
+.dark-mode button:hover {
+  background-color: #444;
 }
